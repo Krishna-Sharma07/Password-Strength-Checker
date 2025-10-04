@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.card {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.rule {
+    color: gray;
+}
+
+.rule.valid {
+    color: green;
+}
+
+.result {
+    margin-top: 1rem;
+}
+
+.rule {
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.rule.valid {
+    color: green;
+    font-weight: bold;
+}
+
+header h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+header h1 a:hover {
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #00bcd4;
+}
+
+.home-content {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.home-content section {
+    margin-bottom: 2rem;
+}
+
+.home-content h2, .home-content h3 {
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.home-content p, .home-content li {
+    line-height: 1.6;
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li::before {
+    content: "• ";
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.btn {
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0097a7;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.hero .highlight {
+    color: #00bcd4;
+}
+.intro-text {
+    font-size: 1.1rem;
+    margin: 1rem auto;
+    max-width: 700px;
+    color: #444;
+}
+
+.home-content section {
+    margin-bottom: 2.5rem;
+}
+
+.home-content h3 {
+    color: #222;
+    margin-bottom: 0.8rem;
+}
+
+.home-content p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.home-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.home-content ul li {
+    margin: 0.5rem 0;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.home-content ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.about-app {
+    background: #f8f9fb;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.call-to-action {
+    text-align: center;
+    background: linear-gradient(to right, #00bcd4, #0097a7);
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.call-to-action h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.call-to-action p {
+    color: #e0f7fa;
+    font-size: 1.1rem;
+}
+
+.call-to-action .btn {
+    background-color: #fff;
+    color: #0097a7;
+    font-weight: bold;
+}
+
+.call-to-action .btn:hover {
+    background-color: #e0f2f1;
+}
+
+.privacy-note {
+    background-color: #fff3cd;
+    border-left: 5px solid #ff9800;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    color: #5c440b;
+}
+
+.privacy-note h3 {
+    color: #e65100;
+    margin-bottom: 0.8rem;
+}
+
+.privacy-note p {
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+.privacy-note .emphasis {
+    font-weight: bold;
+    color: #4e342e;
+    margin-top: 1rem;
+    text-align: center;
+}

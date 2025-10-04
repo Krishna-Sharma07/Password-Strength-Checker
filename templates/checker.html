@@ -1,0 +1,21 @@
+{% extends "./base.html" %}
+
+{% block content %}
+<section class="card">
+    <h2>Password Strength Checker</h2>
+    <input type="password" id="password" placeholder="Enter your password">
+
+    <div class="rules">
+        <p id="length" class="rule">✔ At least 8 characters</p>
+        <p id="uppercase" class="rule">✔ At least 1 uppercase letter</p>
+        <p id="lowercase" class="rule">✔ At least 1 lowercase letter</p>
+        <p id="digit" class="rule">✔ At least 1 number</p>
+        <p id="symbol" class="rule">✔ At least 1 special character</p>
+    </div>
+
+    <div class="strength">
+        <p>Strength: <span id="strength-label">Not checked</span></p>
+    </div>
+</section>
+<script src="/static/js/checker.js"></script>
+{% endblock %}

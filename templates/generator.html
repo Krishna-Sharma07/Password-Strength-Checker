@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="card">
+    <h2>Password Generator</h2>
+    
+    <label for="length">Length:</label>
+    <input type="number" id="length" min="6" max="32" value="12">
+
+    <button>Generate Password</button>
+
+    <div class="result">
+        <input type="text" id="generated-password" readonly>
+        <button id="copy-btn">Copy</button>
+    </div>
+</section>
+<script src="/static/js/generator.js"></script>
+{% endblock %}

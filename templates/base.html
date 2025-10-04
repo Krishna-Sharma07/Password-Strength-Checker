@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Strength Checker and Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1><a href="{{ url_for('home') }}">Password Utility</a></h1>
+        <nav>
+            <a href="{{ url_for('checker') }}">Password Checker</a>
+            <a href="{{ url_for('generator') }}">Password Generator</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+<section class="home-content">
+    <section class="hero">
+        <h2>Welcome to <span class="highlight">Password Utility 🔐</span></h2>
+        <p class="intro-text">
+            Your one-stop tool to <strong>analyze, test, and generate</strong> secure passwords that keep your online accounts safe.
+        </p>
+        <div class="cta-buttons">
+            <a class="btn" href="{{ url_for('checker') }}">Check Password Strength</a>
+            <a class="btn" href="{{ url_for('generator') }}">Generate Strong Password</a>
+        </div>
+    </section>
+
+    <section class="info">
+        <h3>🔎 Why Strong Passwords Matter</h3>
+        <p>
+            Passwords are often the only barrier between hackers and your private information. Using weak or repeated passwords makes you an easy target.
+        </p>
+        <ul>
+            <li>💥 81% of data breaches are caused by weak or stolen passwords.</li>
+            <li>🔐 Strong passwords reduce your chances of account compromise dramatically.</li>
+            <li>🌐 Hackers use automated tools to guess millions of weak passwords per second.</li>
+        </ul>
+    </section>
+
+    <section class="mistakes">
+        <h3>⚠️ Common Password Mistakes</h3>
+        <ul>
+            <li>Using the same password across multiple websites.</li>
+            <li>Choosing simple passwords like "password123" or birthdays.</li>
+            <li>Saving passwords in plain text or screenshots.</li>
+            <li>Never updating passwords after years of use.</li>
+        </ul>
+    </section>
+
+    <section class="best-practices">
+        <h3>✅ Tips for Creating Strong Passwords</h3>
+        <ul>
+            <li>Use at least 12 characters or more.</li>
+            <li>Mix uppercase, lowercase, numbers, and special symbols.</li>
+            <li>Avoid using real words, names, or dates.</li>
+            <li>Consider using a password manager to store complex passwords securely.</li>
+        </ul>
+    </section>
+
+    <section class="about-app">
+        <h3>💡 About This App</h3>
+        <p>
+            The <strong>Password Checker</strong> helps you test your password's strength instantly and gives visual feedback on its security level.<br>
+            The <strong>Password Generator</strong> creates random, strong passwords that follow security best practices — perfect for new accounts.
+        </p>
+    </section>
+
+    <section class="call-to-action">
+        <h3>Ready to Strengthen Your Online Security?</h3>
+        <p>Try our tools now and make your accounts safer in seconds.</p>
+        <div class="cta-buttons">
+            <a class="btn" href="{{ url_for('checker') }}">Check My Password</a>
+            <a class="btn" href="{{ url_for('generator') }}">Generate Password</a>
+        </div>
+    </section>
+
+    <section class="privacy-note">
+        <h3>⚠️ Your Privacy Matters</h3>
+        <p>
+            We value your security and peace of mind. ❤️<br>
+            When you test a password here, it is <strong>never saved, stored, or transmitted</strong> anywhere beyond your own browser session. 
+            All strength checks happen <strong>instantly and securely in real time</strong> — nothing leaves your device.
+        </p>
+        <p>
+            Similarly, our <strong>Password Generator</strong> creates strong passwords on the spot and <em>does not record or send them</em> to any server or third party.  
+        </p>
+        <p class="emphasis">
+            🛡️ <strong>Your passwords are yours alone.</strong><br>
+            This tool is designed purely for your education, awareness, and convenience — no data collection, no tracking, just safety.
+        </p>
+    </section>
+</section>
+{% endblock %}
+
+    </main>
+
+    <footer>
+        <p>Made with ❤️ using Flask</p>
+    </footer>
+</body>
+</html>
